@@ -212,35 +212,6 @@ nav a:hover::after {
 
 
 
-/* 
-
-nav a {
-    text-decoration: none;
-    color: var(--text-dark);
-    font-weight: 500;
-    transition: color 0.3s;
-    position: relative;
-}
-
-nav a:hover {
-    color: var(--primary-indigo);
-}
-
-nav a.active {
-    color: var(--primary-indigo);
-    font-weight: 600;
-}
-
-nav a.active::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, var(--primary-indigo), var(--primary-purple));
-} */
-
 .header-cta {
     background: linear-gradient(90deg, var(--primary-indigo), var(--primary-purple), var(--primary-green));
     color: white;
@@ -439,47 +410,6 @@ nav a.active::after {
 
 
 
-
-/* 
-
-.btn {
-    padding: 12px;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-     padding: 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: 0.3s;
-  width: 100%;
-}
-
-.btn-primary {
-    background: linear-gradient(90deg, var(--primary-indigo), var(--primary-purple), var(--primary-green));
-    color: white;
-    border: none;
-    box-shadow: var(--shadow-md);
-}
-
-.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
-}
-
-.btn-secondary {
-    background: transparent;
-    color: var(--primary-indigo);
-    border: 2px solid var(--primary-indigo);
-}
-
-.btn-secondary:hover {
-    background: rgba(79, 70, 229, 0.05);
-} */
 
 /* Hero1 Section */
 .hero1 {
@@ -1829,4 +1759,27 @@ footer {
 
 .member-social a:hover {
     color: var(--primary-indigo);
+}
+
+
+/* Hide menu by default on mobile */
+#mainNav {
+    display: none;
+}
+
+/* Show when active class added */
+#mainNav.active {
+   display: block;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px); 
+}
+
+/* For desktop (optional) */
+@media (min-width: 768px) {
+    #mainNav {
+        display: block;
+    }
+    .mobile-menu-btn {
+        display: none;
+    }
 }

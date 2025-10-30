@@ -15,16 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Mobile menu toggle
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mainNav = document.getElementById('mainNav');
-    
-    if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener('click', function() {
-            console.log('Mobile menu button clicked');
-            mainNav.classList.toggle('active');
-        });
-    }
+   
+
+    // JavaScript to toggle mobile menu
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const mainNav = document.getElementById("mainNav");
+
+mobileMenuBtn.addEventListener("click", () => {
+    mainNav.classList.toggle("active");
+});
+
     
     // Schedule Demo Modal
     const scheduleDemoBtn = document.getElementById('scheduleDemoBtn');
